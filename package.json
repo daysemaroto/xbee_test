@@ -1,0 +1,23 @@
+{
+  "name": "xbee_test",
+  "version": "1.0.0",
+  "description": "communication tests with xbee modules",
+  "main": "main.js",
+  "dependencies": {
+    "xbee-rx": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daysemaroto/xbee_test.git"
+  },
+  "author": "Dayse Maroto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daysemaroto/xbee_test/issues"
+  },
+  "homepage": "https://github.com/daysemaroto/xbee_test#readme"
+}
