@@ -4,11 +4,12 @@
   "description": "communication tests with xbee modules",
   "main": "main.js",
   "dependencies": {
+    "debug": "^4.3.4",
     "xbee-rx": "^5.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "DEBUG=bcg:* node src/main.js"
   },
   "repository": {
     "type": "git",
