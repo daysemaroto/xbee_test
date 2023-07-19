@@ -1,6 +1,8 @@
 const xbeeRx = require('xbee-rx');
 const { performance } = require('perf_hooks');
+const cron = require('node-cron');
 
+const CRONJOB_SEND_MESSAGE = '10 14 * * *';
 const PORT = '/dev/ttyUSB2';
 const DEST_MAC_ADDRESS = '0013a20041de6174';
 const BAUD_RATE = 9600;
@@ -75,4 +77,7 @@ const execute = async () => {
     process.exit();
   }
 
-execute();
+cron.schedule(CRONJOB_SEND_MESSAGE, async () => {
+  console.log('cron job send message');
+  execute();
+});

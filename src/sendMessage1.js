@@ -1,6 +1,8 @@
 const xbeeRx = require('xbee-rx');
 const { performance } = require('perf_hooks');
+const cron = require('node-cron');
 
+const CRONJOB_SEND_MESSAGE = '10 14 * * *';
 const PORT = '/dev/ttyUSB0';
 const DEST_MAC_ADDRESS = '0013a20042019f72';
 const BAUD_RATE = 9600;
