@@ -76,4 +76,7 @@ const execute = async () => {
     process.exit();
   }
 
-execute();
+cron.schedule(CRONJOB_SEND_MESSAGE, async () => {
+  console.log('cron job send message');
+  execute();
+});
