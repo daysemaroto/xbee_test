@@ -74,7 +74,7 @@ const execute = async () => {
     console.log('end time: ', endTime);
     console.log(`Process of remoteTransmit took  ${endTime - initTime}  milliseconds.`);
     console.log(`Process of remoteTransmit took  ${millisToMinutesAndSeconds(endTime - initTime)}  minutes.`);
-    process.exit();
+    // process.exit();
   }
 
 cron.schedule(CRONJOB_SEND_MESSAGE, async () => {
