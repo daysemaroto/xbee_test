@@ -1,5 +1,5 @@
 {
-  "name": "xbee_test",
+  "name": "xbee_test-javascript",
   "version": "1.0.0",
   "description": "communication tests with xbee modules",
   "main": "main.js",
